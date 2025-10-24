@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   <title>Operating Department</title>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
@@ -13,61 +13,59 @@
       background-size: cover;
       margin: 0;
       text-align: center;
+      overflow-x: hidden;
     }
 
-    /* Responsive headings */
     .heading1 {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(28px, 4vw, 55px);
+      font-size: clamp(26px, 4vw, 55px);
       font-weight: bold;
       text-shadow: 3px 3px 5px white;
       color: #002366;
-      margin: 10px 0 0 0;
+      margin-top: 70px;
     }
 
     .heading2 {
       font-family: "Cinzel Decorative", cursive;
-      font-size: clamp(32px, 5vw, 62px);
+      font-size: clamp(30px, 5vw, 62px);
       font-weight: bold;
       color: #FFD700;
       -webkit-text-stroke: 2px black;
       text-shadow: 5px 5px 5px blue;
-      margin: 00px 0;
+      margin: 0;
     }
 
     .heading3 {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(20px, 3vw, 38px);
+      font-size: clamp(18px, 3vw, 38px);
       font-weight: bold;
       text-transform: uppercase;
       text-shadow: 3px 3px 5px yellow;
       color: green;
-      margin-bottom: 00px;
+      margin-bottom: 15px;
     }
 
-    /* Responsive logo */
     .logo {
       position: absolute;
-      top: 15px;
-      left: 15px;
-      width: clamp(70px, 12vw, 150px);
+      top: 10px;
+      left: 10px;
+      width: clamp(60px, 10vw, 130px);
       height: auto;
-      object-fit: cover;
     }
 
-    /* Passport photo container */
     .passport-container {
       position: absolute;
-      top: 15px;
-      right: 15px;
+      top: 10px;
+      right: 10px;
       text-align: center;
     }
 
     .passport {
-      width: clamp(80px, 12vw, 150px);
-      height: clamp(100px, 14vw, 170px);
+      width: clamp(80px, 20vw, 140px);
+      height: auto;
       border: 2px solid black;
       object-fit: cover;
+      border-radius: 4px;
     }
 
     .caption {
@@ -75,44 +73,44 @@
       font-size: clamp(10px, 1.5vw, 18px);
       font-weight: bold;
       color: #002366;
-      margin-top: 5px;
+      margin-top: 3px;
     }
 
-    /* Button container */
-  .button-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
-    justify-items: center;
-    margin: 170px auto;
-    max-width: 75%;
-  }
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      justify-items: center;
+      margin: 140px auto 60px;
+      width: 90%;
+      max-width: 1000px;
+    }
 
-  button {
-    width: 260px;
-    height: 85px;
-    font-size: 22px;
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: 700;
-    letter-spacing: 1px;
-    border: none;
-    border-radius: 14px;
-    color: WHITE;
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    transition: all 0.35s ease;
-    background-size: 200% auto;
-    text-shadow: 1px 1px 2px rgba(255,255,255,0.7);
-  }
+    button {
+      width: 100%;
+      max-width: 260px;
+      height: 80px;
+      font-size: clamp(16px, 2.2vw, 22px);
+      font-family: 'Bebas Neue', sans-serif;
+      font-weight: 700;
+      letter-spacing: 1px;
+      border: none;
+      border-radius: 14px;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: all 0.35s ease;
+      background-size: 200% auto;
+      text-shadow: 1px 1px 2px rgba(255,255,255,0.7);
+    }
 
-  button:hover {
-    transform: scale(1.07);
-    background-position: right center;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5),
-                0 0 40px rgba(255, 255, 255, 0.2);
-  }
+    button:hover {
+      transform: scale(1.07);
+      background-position: right center;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.5),
+                  0 0 40px rgba(255, 255, 255, 0.2);
+    }
 
- /* Gradient + neon glow themes */
     .btn1 { background-image: linear-gradient(to right, #89f7fe, #66a6ff); }
     .btn2 { background-image: linear-gradient(to right, #f6d365, #fda085); }
     .btn3 { background-image: linear-gradient(to right, #a1c4fd, #c2e9fb); }
@@ -127,26 +125,16 @@
     .btn5:hover { box-shadow: 0 0 20px #fddb92, 0 0 40px #d1fdff; }
     .btn6:hover { box-shadow: 0 0 20px #84fab0, 0 0 40px #8fd3f4; }
 
-
-    
-    .A { background: linear-gradient(135deg, #1565c0, #1e88e5); }
-    .B { background: linear-gradient(135deg, #00897b, #26a69a); }
-    .C { background: linear-gradient(135deg, #6a1b9a, #8e24aa); }
-    .D { background: linear-gradient(135deg, #ef6c00, #f57c00); }
-    .E { background: linear-gradient(135deg, #0097a7, #006064); }
-    .F { background: linear-gradient(135deg, #f9a825, #f57f17); }
-
-    /* Scrolling text */
     .scroll-text {
-      margin-top: 50px;
+      margin-top: 20px;
       font-family: 'Cinzel Decorative', cursive;
-      font-size: clamp(16px, 2.5vw, 25px);
+      font-size: clamp(14px, 2.5vw, 22px);
       font-weight: bold;
       color: #FFD700;
       text-shadow: 3px 3px 6px #002366, 0 0 20px #fff;
       border-top: 2px solid rgba(255,255,255,0.4);
       border-bottom: 2px solid rgba(255,255,255,0.4);
-      padding: 12px 0;
+      padding: 10px 0;
       background: rgba(0, 35, 102, 0.2);
     }
 
@@ -156,23 +144,21 @@
       font-style: italic;
     }
 
-    /* Watermark */
     .watermark {
       position: fixed;
       bottom: 10px;
       right: 20px;
       opacity: 0.1;
-      font-size: clamp(50px, 10vw, 120px);
+      font-size: clamp(40px, 8vw, 120px);
       font-weight: bold;
       color: #0d47a1;
       user-select: none;
       pointer-events: none;
     }
 
-    /* Footer */
     footer {
       text-align: center;
-      padding: 15px;
+      padding: 12px;
       background: rgba(0, 35, 102, 0.6);
       color: white;
       font-family: 'Playfair Display', serif;
@@ -193,6 +179,28 @@
       text-decoration: underline;
     }
 
+    /* Fix for small screens */
+    @media (max-width: 768px) {
+      .logo, .passport-container {
+        position: static;
+        display: block;
+        margin: 10px auto;
+      }
+
+      .heading1 {
+        margin-top: 20px;
+      }
+
+      .button-container {
+        margin: 40px auto 80px;
+        gap: 18px;
+      }
+
+      footer {
+        font-size: 12px;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -209,7 +217,6 @@
   <div class="heading2">🚨Caution Orders</div>
   <div class="heading3">GUNTUR DIVISION</div>
 
-  <!-- Button grid -->
   <div class="button-container">
     <button class="btn1" onclick="openFolder('https://drive.google.com/drive/folders/1w2QD-H9gDohA6QGiVwWVB6MGWzbUM9qF?usp=drive_link')">DAILY CAUTION ORDERS</button>
     <button class="btn2" onclick="openFolder('https://docs.google.com/spreadsheets/d/1ZP8zkKUa63mSn4eqBoi23temrWg-n5FmTpmBLw7__Vg/edit?gid=1434624261#gid=1434624261')">CAUTION ORDERS SUMMARY</button>
@@ -221,14 +228,12 @@
     <button class="btn2" onclick="openFolder('https://drive.google.com/drive/folders/1Op-opU28fAPAVHZ-ShYu0SkqbOIEsPag?usp=drive_link')">2025 SOBS</button>
   </div>
 
-  <!-- Scrolling Text -->
   <div class="scroll-text">
     <marquee behavior="scroll" direction="LEFT" scrollamount="12">
       🌟✨ Welcome to the <span>Operating Department</span> CAUTION ORDERS PORTAL <span>of Guntur Division, South Central Railway</span> 🚂💼
     </marquee>
   </div>
 
-  <!-- Footer -->
   <footer>
     <p>
       Designed for <strong>Caution Order Management</strong> | Powered by 
@@ -238,7 +243,6 @@
     </p>
   </footer>
 
-  <!-- Watermark -->
   <div class="watermark">CO-HUB</div>
 
   <script>
@@ -249,15 +253,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
